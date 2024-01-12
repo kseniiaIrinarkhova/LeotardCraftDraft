@@ -45,18 +45,55 @@ body>footer {
     padding: 0;
 }
 
+/*----------------------------Logo styling*/
 #logo {
     padding: 15px 0 0 15px;
     max-width: max(350px, 20%);
     min-width: min(150px, 20%);
 }
 
+/*----------------------------Search Bar*/
 .search-bar {
     margin: auto;
-    width: max(250px, 20%);
+    width: max(500px, 40%);
     padding: 15px;
 }
 
+form.search-form {
+    box-sizing: border-box;
+    height: 30px;
+}
+
+form.search-form input[type=text] {
+    float: left;
+    width: calc(90% - 50px);
+    border-radius: 15px 0 0 15px;
+    border: 1px solid black;
+    border-right: none;
+    text-align: right;
+    line-height: 18px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+form.search-form button {
+    float: left;
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;
+    background-color: #9776C8;
+    border-left: 1px solid #9776C8;
+    font-size: 15px;
+        padding: 5px;
+}
+form.search-form img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/*----------------------------Personal menu*/
 .personal-menu {
     width: 100px;
     display: grid;
@@ -90,6 +127,7 @@ body>footer {
     grid-area: favorite;
 }
 
+/*******************************************/
 /*Second line with catalog and quick linkes*/
 #menu {
     grid-area: menu;
