@@ -85,8 +85,9 @@ form.search-form button {
     background-color: #9776C8;
     border-left: 1px solid #9776C8;
     font-size: 15px;
-        padding: 5px;
+    padding: 5px;
 }
+
 form.search-form img {
     width: 30px;
     height: 30px;
@@ -111,6 +112,7 @@ form.search-form img {
     width: 45px;
     height: 45px;
     text-align: center;
+    text-decoration: none;
 }
 
 .personal-menu img {
@@ -140,14 +142,14 @@ form.search-form img {
 
 }
 
-.menu-btn{
+.menu-btn {
     padding: 15px;
     font-size: 17px;
     text-align: center;
     min-width: 70px;
 }
 
-.menu-btn.catalog{
+.menu-btn.catalog {
     margin-right: 50px;
     background-color: #9776C8;
     display: flex;
@@ -157,12 +159,29 @@ form.search-form img {
     border-radius: 15px;
 }
 
-.menu-btn.menu-btn.catalog img{
+.menu-btn.menu-btn.catalog img {
     height: 20px;
     width: 20px;
     margin-right: 5px;
 }
 
-.menu-btn.right{
+.menu-btn.right {
     margin-left: auto;
+}
+
+/*-----------nav bar hover effects---------*/
+.personal-menu a:hover,
+.menu-btn:hover {
+    text-decoration: underline;
+    color: #9776C8;
+}
+
+.menu-btn.menu-btn.catalog:hover {
+    background-color: #f4effa;
+    border: 2px solid #9776C8;
+}
+
+form.search-form button:hover {
+    background-color: #f4effa;
+    border-left: 1px solid #9776C8;
 }
