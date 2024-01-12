@@ -20,7 +20,7 @@ body > nav{
     grid-template-areas: 
     "header"
     "menu";
-    grid-template-rows: 105px 65px;
+    grid-template-rows: 90px 50px;
     grid-template-columns: 1fr;
 }
 
@@ -44,8 +44,48 @@ body > footer{
     margin: 0;
     padding: 0;
 }
+#logo{
+    padding: 15px 0 0 15px;
+    max-width: max(350px, 20%);
+    min-width: min(150px, 20%);
+}
+.search-bar{
+   margin: auto;
+   width: max(250px, 20%);
+   padding:15px;
+}
+.personal-menu{
+width: 100px;
+display: grid;
+grid-template-areas: "user favorite";
+grid-template-columns: 45px 45px;
+justify-content: space-around;
+align-content: center;
+font-size: 10px;
+padding-right: 15px;
+}
 
-
+#user{
+    grid-area: user;
+    padding: 5px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+.personal-menu img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+#favorite {
+    grid-area: favorite;
+    padding: 5px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
 /*Second line with catalog and quick linkes*/
 #menu{
     grid-area: menu;
