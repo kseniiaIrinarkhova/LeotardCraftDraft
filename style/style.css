@@ -135,5 +135,34 @@ form.search-form img {
     flex-flow: row nowrap;
     height: 50px;
     margin: 0;
-    padding: 0;
+    padding: 10px 15px 10px 0;
+    width: 98%;
+
+}
+
+.menu-btn{
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.menu-btn.catalog{
+    margin-right: 50px;
+    background-color: #9776C8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 15px;
+}
+
+.menu-btn.menu-btn.catalog img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.menu-btn.right{
+    margin-left: auto;
 }
