@@ -1,3 +1,4 @@
+/*Basic layout*/
 body{
     display: grid;
     width: 100%;
@@ -13,6 +14,11 @@ body{
 body > nav{
     grid-area: nav;
     background-color: #f4effa;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 body > main{
@@ -24,4 +30,25 @@ body > main{
 body > footer{
     grid-area: footer;
     background-color: #9776C8;
+}
+
+/*----------------------------------------Navbar menu---------------------------*/
+/*first line with logo, search bar and user's related menu buttons*/
+#header{
+    order: 0;
+    display:flex;
+    flex-flow: row nowrap;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Second line with catalog and quick linkes*/
+#menu{
+    order:1;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50%;
+    margin: 0;
+    padding: 0;
 }
