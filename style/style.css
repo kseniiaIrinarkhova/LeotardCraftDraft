@@ -1,4 +1,4 @@
-/*Basic layout*/
+/*------------------------Basic layout----------------------*/
 body{
     display: grid;
     width: 100%;
@@ -6,7 +6,7 @@ body{
     "nav"
     "main"
     "footer";
-    grid-template-rows: 100px 1fr 200px;
+    grid-template-rows: 160px 1fr 200px;
     grid-template-columns: 1fr;
 
 }
@@ -15,10 +15,13 @@ body > nav{
     grid-area: nav;
     background-color: #f4effa;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "menu";
+    grid-template-rows: 105px 65px;
+    grid-template-columns: 1fr;
 }
 
 body > main{
@@ -32,23 +35,23 @@ body > footer{
     background-color: #9776C8;
 }
 
-/*----------------------------------------Navbar menu---------------------------*/
+/*----------------Navbar menu---------------------------*/
 /*first line with logo, search bar and user's related menu buttons*/
 #header{
-    order: 0;
+    grid-area: header;
     display:flex;
     flex-flow: row nowrap;
-    height: 50%;
     margin: 0;
     padding: 0;
 }
 
+
 /*Second line with catalog and quick linkes*/
 #menu{
-    order:1;
+    grid-area: menu;
     display: flex;
     flex-flow: row nowrap;
-    height: 50%;
+    height: 50px;
     margin: 0;
     padding: 0;
 }
