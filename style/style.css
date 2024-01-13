@@ -199,3 +199,24 @@ form.search-form button:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+.hero-action{
+    padding: 15px;
+        font-size: 24px;
+        text-align: center;
+        width: 150px;
+        height: 28px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: #9776C8;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 2;
+        top: 440px;
+        left:35%
+}
+
+.hero-action:hover{
+background-image: -webkit-linear-gradient(top,  #f4effa, #9776C8 );
+}
