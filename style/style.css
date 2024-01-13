@@ -212,6 +212,7 @@ form.search-form button:hover {
         text-align: center;
         text-decoration: none;
         background-color: #9776C8;
+        color: #32456F;
         border-radius: 15px;
         position: absolute;
         z-index: 2;
@@ -224,6 +225,9 @@ form.search-form button:hover {
 
 .hero-action:hover{
 background-image: -webkit-linear-gradient(top,  #f4effa, #9776C8 );
+}
+.hero-action:active{
+    color: #f4effa;
 }
 
 /* key frames for animation*/
