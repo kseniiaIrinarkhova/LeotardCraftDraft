@@ -1,14 +1,15 @@
 /*------------------------Basic layout----------------------*/
 body {
     display: grid;
-    width: 100%;
+    width: 90%;
     grid-template-areas:
         "nav"
         "main"
         "footer";
     grid-template-rows: 160px 1fr 200px;
     grid-template-columns: 1fr;
-
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 body>nav {
