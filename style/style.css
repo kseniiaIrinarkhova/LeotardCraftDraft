@@ -29,6 +29,13 @@ body>main {
     grid-area: main;
     background-color: #C9E4DE;
     height: 90vh;
+    width: 80vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 10px;
+    align-content: center;
 }
 
 body>footer {
@@ -185,4 +192,10 @@ form.search-form img {
 form.search-form button:hover {
     background-color: #f4effa;
     border-left: 1px solid #9776C8;
+}
+/*-----------------main block---------------*/
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
 }
