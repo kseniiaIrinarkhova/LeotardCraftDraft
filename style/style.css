@@ -216,9 +216,30 @@ form.search-form button:hover {
         position: absolute;
         z-index: 2;
         top: 440px;
-        left:35%
+        left:35%;
+        /*Delay in button appearing 1st time*/
+        animation: show;  /*added keyframe*/
+        animation-duration: 5s;
 }
 
 .hero-action:hover{
 background-image: -webkit-linear-gradient(top,  #f4effa, #9776C8 );
+}
+
+/* key frames for animation*/
+@keyframes show {
+    0% {
+        visibility: hidden;
+        background-color: transparent;
+        color: transparent;
+    }
+
+    20% {
+        visibility:visible;
+        background-color: transparent;
+    }
+
+    100%{
+        background-color: #9776C8;
+    }
 }
