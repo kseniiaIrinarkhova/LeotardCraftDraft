@@ -1,4 +1,17 @@
+/*additional elements*/
+@font-face {
+    font-family: curly-handwriting;
+    src: url(Ruthie\ Regular.ttf);
+}
+@font-face {
+    font-family: basic;
+    src: url(Amatic\ SC\ Regular.ttf);
+}
 /*------------------------Basic layout----------------------*/
+*{
+    font-family: basic;
+    font-weight: bold;
+}
 body {
     display: grid;
     width: 90%;
@@ -81,7 +94,8 @@ form.search-form input[type=text] {
     border-right: none;
     text-align: right;
     line-height: 18px;
-    font-size: 15px;
+    font-size: 1em;
+    font-weight: bold;
     padding: 5px;
 }
 
@@ -115,7 +129,8 @@ form.search-form img {
 }
 
 .personal-menu a {
-    font-size: 10px;
+    font-size: 1em;
+    font-weight: bold;
     padding: 5px;
     display: block;
     width: 45px;
@@ -153,7 +168,8 @@ form.search-form img {
 
 .menu-btn {
     padding: 15px;
-    font-size: 17px;
+    font-size: 1.3em;
+    font-weight: bold;
     text-align: center;
     min-width: 70px;
 }
@@ -203,7 +219,8 @@ form.search-form button:hover {
 
 .hero-action{
     padding: 15px;
-        font-size: 24px;
+        font-size: 2em;
+        font-weight: bolder;
         text-align: center;
         width: 150px;
         height: 28px;
@@ -245,4 +262,11 @@ background-image: -webkit-linear-gradient(top,  #f4effa, #9776C8 );
     100%{
         background-color: #9776C8;
     }
+}
+
+h1{
+    text-align: center;
+    color: #32456F;
+    font-family: curly-handwriting;
+    font-size: 3em;
 }
