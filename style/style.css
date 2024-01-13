@@ -30,7 +30,6 @@ body>nav {
 body>main {
     grid-area: main;
     background-color: #C9E4DE;
-    height: 90vh;
     width: 80vw;
     display: flex;
     flex-flow: column nowrap;
