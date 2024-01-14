@@ -258,7 +258,7 @@ form.search-form button:hover {
 }
 
 .hero-action:hover {
-    background-image: -webkit-linear-gradient(top, #f4effa, #9776C8);
+    background-image: -webkit-linear-gradient(top, #f4effa, #9776C8); /*gradient*/
 }
 
 .hero-action:active {
@@ -463,6 +463,18 @@ div.login-form{
     font-family: basic;
     font-size: 1.1em;
 }
+#login-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #9776C8;
+    border: none;
+    border-radius: 15px;
+}
+
+#login-btn:hover {
+    background-image: -webkit-linear-gradient(top, #855FBF, #9776C8);
+    /*gradient*/
+}
 
 /********************Registration page*****/
 
@@ -491,4 +503,16 @@ padding-right: 10px;
 }
 .reg-table fieldset{
     width: 100%;
+}
+
+#reg-btn{
+    width: 200px;
+    height: 30px;
+    background-color: #9776C8;
+    border: none;
+    border-radius: 15px;
+}
+#reg-btn:hover{
+background-image: -webkit-linear-gradient(top, #855FBF, #9776C8);
+    /*gradient*/
 }
