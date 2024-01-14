@@ -521,3 +521,25 @@ padding-right: 10px;
 background-image: -webkit-linear-gradient(top, #855FBF, #9776C8);
     /*gradient*/
 }
+
+/*---------------sewing page------------------*/
+.sewing-main{
+    padding: 15px;
+}
+
+.sewing-main p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.sewing-main p::first-letter{
+ font-family: curly-handwriting;
+ font-size: 2em;
+ color: #855FBF;
+}
+
+.sewing-main h3{
+    font-family: basic;
+    font-size: 2em;
+    padding-left: 20px;
+}
