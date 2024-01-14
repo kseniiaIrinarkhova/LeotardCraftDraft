@@ -48,6 +48,7 @@ body>main {
     grid-area: main;
     background-color: #C9E4DE;
     width: 92vw;
+    min-height: 50vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -206,6 +207,10 @@ form.search-form img {
     margin-left: auto;
 }
 
+.menu-btn.active{
+    background-color: #C9E4DE;
+    border-radius: 15px;
+}
 /*-----------nav bar hover effects---------*/
 .personal-menu a:hover,
 .menu-btn:hover {
