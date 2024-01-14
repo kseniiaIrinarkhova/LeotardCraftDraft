@@ -7,6 +7,11 @@
     <title>LeotardCraft - new user registration</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        main {
+            height: 50vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,6 +39,47 @@
         </div>
     </nav>
     <main>
+        <H1>Register page</H1>
+        <form action="#">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter Your First Name">
+            <br />
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter Your Last Name">
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br />
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter Your Password">
+            <br />
+            <label for="passwordCnfrm">Confirm Password</label>
+            <input type="password" id="passwordCnfrm" placeholder="Confirm Your Password">
+            <br />
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </fieldset>
+            <br />
+        
+            <label for="dofbirth">Date of Birth</label>
+            <input type="date" id="dofbirth">
+            <fieldset>
+                <legend>Habits</legend>
+                <label for="sport">You like sport</label>
+                <input type="radio" name="habits" value="sport" id="sport">
+                <label for="eat">You like eat</label>
+                <input type="radio" name="habits" value="eat" id="eat">
+                <label for="sleep">You like sleep</label>
+                <input type="radio" name="habits" value="sleep" id="sleep">
+            </fieldset>
+            <br />
+            <input type="submit" value="Register">
+        </form>
+        <p>Have a user? <a href="/pages/login.html">Log in</a>!</p>
     </main>
     <footer>
         <table class="footer-links">
