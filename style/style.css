@@ -222,14 +222,17 @@ form.search-form button:hover {
 .hero {
     margin-left: auto;
     margin-right: auto;
+    height:400px;
+    width: 900px;
+    position: relative;
 }
+
 
 .hero-action {
     padding: 15px;
     font-size: 2em;
     font-weight: bolder;
     font-family: basic;
-    text-align: center;
     width: 150px;
     height: 28px;
     display: block;
@@ -240,8 +243,8 @@ form.search-form button:hover {
     border-radius: 15px;
     position: absolute;
     z-index: 2;
-    top: 440px;
-    left: 35%;
+    top: 260px;
+    left: 230px;
     /*Delay in button appearing 1st time*/
     animation: show;
     /*added keyframe*/
