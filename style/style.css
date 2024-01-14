@@ -446,3 +446,19 @@ footer > table{
 .footer-links a:hover{
     color: #BDA7DC;
 }
+
+/********************LogIn page*****/
+
+div.login-form{
+    position: absolute;
+        top: 180px;
+        left: 45vw;;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+}
+
+.login-form p,a{
+    font-family: basic;
+    font-size: 1.1em;
+}
