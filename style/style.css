@@ -310,7 +310,7 @@ h1 {
 
 /*-------------main features cards-------------*/
 .main-directions {
-    height:500px;
+    height: 500px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -330,4 +330,60 @@ h1 {
 
 .card-link {
     margin-top: auto;
+}
+
+/*------------------review section------------------*/
+.reviews {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "info"
+        "reviews";
+    margin-bottom: 20px;
+}
+
+.reviews>h1 {
+    grid-area: header;
+    color: #9776C8;
+}
+
+.reviews>p {
+    grid-area: info;
+    text-align: center;
+    font-size: 2em;
+}
+
+.reviews-container {
+    grid-area: reviews;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*---------review card-------------*/
+.review-card {
+    width: 550px;
+    height: 200px;
+    border: 2px solid #f4effa;
+    display: grid;
+    grid-template-areas: "img body";
+    grid-template-columns: 200px 350px;
+}
+
+.review-card>.card-img {
+    grid-area: img;
+}
+
+.review-card img {
+    width: 180px;
+    height: 180px;
+}
+
+.review-card>.card-body {
+    grid-area: body;
+}
+.card-author{
+    text-align: right;
+    padding-right: 15px;
 }
