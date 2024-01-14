@@ -400,8 +400,6 @@ h1 {
 footer > table{
     position: relative;
     left: 35vw;
-    border: 1px solid black;
-    width: 20vw;
     border-collapse: collapse;
     margin: 5px
 }
