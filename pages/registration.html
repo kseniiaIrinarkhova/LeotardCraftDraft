@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         main {
-            height: 50vh;
+            height: 60vh;
         }
     </style>
 </head>
@@ -17,8 +17,8 @@
 <body>
     <nav>
         <div id="header">
-            <a href="/pages/index.html" class="logo"> <img src="../style/img/leotardcraft-high-resolution-logo-transparent.png"
-                    alt="LeotardCraft Logo"></a>
+            <a href="/pages/index.html" class="logo"> <img
+                    src="../style/img/leotardcraft-high-resolution-logo-transparent.png" alt="LeotardCraft Logo"></a>
             <div class="search-bar">
                 <form action="#" class="search-form">
                     <input type="text" placeholder="Find It Quickly">
@@ -26,7 +26,8 @@
                 </form>
             </div>
             <div class="personal-menu">
-                <a href="#" id="user"><img src="../style/img/user-loggedout.png" alt="LogIn"><br />Log In</a>
+                <a href="/pages/login.html" id="user"><img src="../style/img/user-loggedout.png" alt="LogIn"><br />Log
+                    In</a>
                 <a href="#" id="favorite"><img src="../style/img/favorite.png" alt="Favorite"><br />Favorite</a>
             </div>
         </div>
@@ -39,47 +40,73 @@
         </div>
     </nav>
     <main>
-        <H1>Register page</H1>
-        <form action="#">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="Enter Your First Name">
-            <br />
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Enter Your Last Name">
-            <br />
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter Your Email">
-            <br />
-            <label for="password">Password</label>
-            <input type="text" id="password" placeholder="Enter Your Password">
-            <br />
-            <label for="passwordCnfrm">Confirm Password</label>
-            <input type="password" id="passwordCnfrm" placeholder="Confirm Your Password">
-            <br />
-            <fieldset>
-                <legend>Gender</legend>
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="female">Female</label>
-                <input type="radio" id="female" name="gender" value="female">
-            </fieldset>
-            <br />
-        
-            <label for="dofbirth">Date of Birth</label>
-            <input type="date" id="dofbirth">
-            <fieldset>
-                <legend>Habits</legend>
-                <label for="sport">You like sport</label>
-                <input type="radio" name="habits" value="sport" id="sport">
-                <label for="eat">You like eat</label>
-                <input type="radio" name="habits" value="eat" id="eat">
-                <label for="sleep">You like sleep</label>
-                <input type="radio" name="habits" value="sleep" id="sleep">
-            </fieldset>
-            <br />
-            <input type="submit" value="Register">
-        </form>
-        <p>Have a user? <a href="/pages/login.html">Log in</a>!</p>
+        <div class="register-form">
+            <H1>Register page</H1>
+            <form action="#">
+                <table class="reg-table">
+                    <tr>
+                        <td class="td-label"><label for="firstName">First Name</label></td>
+                        <td class="td-input"><input type="text" id="firstName" placeholder="Enter Your First Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label"><label for="lastName">Last Name</label></td>
+                        <td class="td-input"><input type="text" id="lastName" placeholder="Enter Your Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label"><label for="email">Email</label></td>
+                        <td class="td-input"><input type="email" id="email" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label"><label for="password">Password</label></td>
+                        <td class="td-input"><input type="text" id="password" placeholder="Enter Your Password"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label"><label for="passwordCnfrm">Confirm Password</label></td>
+                        <td class="td-input"><input type="password" id="passwordCnfrm"
+                                placeholder="Confirm Your Password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>Your path in leoratd creation</legend>
+                                <label for="prof">Professional</label>
+                                <input type="radio" id="prof" name="experience" value="prof">
+                                <label for="amateur">Amateur</label>
+                                <input type="radio" id="amateur" name="experience" value="amateur">
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-label"><label for="dofbirth">Date of Birth</label></td>
+                        <td class="td-input"><input type="date" id="dofbirth"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend>Interests</legend>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="interest" value="design" id="design">
+                                        <label for="design">Leotard's design</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="interest" value="materials" id="materials">
+                                        <label for="materials">Materials selection</label>
+                                    </li>
+                                    <li><input type="checkbox" name="interest" value="plan" id="plan">
+                                        <label for="plan">Planning</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Register"></td>
+                    </tr>
+                </table>
+            </form>
+            <p>Have a user? <a href="/pages/login.html">Log in</a>!</p>
+        </div>
     </main>
     <footer>
         <table class="footer-links">

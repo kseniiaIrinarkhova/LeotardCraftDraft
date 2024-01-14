@@ -407,7 +407,8 @@ footer > table{
     position: relative;
     left: 35vw;
     border-collapse: collapse;
-    margin: 5px
+    margin: 5px;
+    min-width:400px;
 }
 
 /*zebra table style*/
@@ -461,4 +462,33 @@ div.login-form{
 .login-form p,a{
     font-family: basic;
     font-size: 1.1em;
+}
+
+/********************Registration page*****/
+
+div.register-form {
+    position: absolute;
+    top: 180px;
+    left: 40vw;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+.reg-table  tr {
+    height: 1.5em;
+}
+.td-label{
+text-align: right;
+padding-right: 10px;
+}
+.td-input input{
+    width: 100%;
+}
+.reg-table ul{
+    text-align: left;
+    list-style: none;
+}
+.reg-table fieldset{
+    width: 100%;
 }
