@@ -72,10 +72,16 @@ body>footer {
 }
 
 /*----------------------------Logo styling*/
-#logo {
+.logo {
     padding: 15px 0 0 15px;
     max-width: max(350px, 20%);
     min-width: min(150px, 20%);
+}
+
+.logo img{
+    max-width: max(310px, 20%);
+    min-width: min(110px, 20%);
+    object-fit: contain;
 }
 
 /*----------------------------Search Bar*/
